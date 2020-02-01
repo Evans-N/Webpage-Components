@@ -5,13 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Navbar</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <nav>
-        <a href='/navbar/index.html'>Home</a>
-        <a href='profile.html'>Profile</a>
-        <a href='/aboutUs.html'>About Us</a>
-        <a href='/contactUs.html'>Contact Us</a>
+        <div class='navbar'>
+            <div class="nav-logo">
+                <h1>Big Long Company Name</h1>
+            </div>
+            <div class="nav-links">
+                <a aria-current='page' href='/navbar/index.html'>Home</a>
+                <a aria-current='' href='profile.html'>Profile</a>
+                <a aria-current='' href='/aboutUs.html'>About Us</a>
+                <a aria-current='' href='/contactUs.html'>Contact Us</a>
+            </div>
+            <i class='dropdown-icon' onclick="displayDropdown()">+</i>            
+        </div>
+        <div id="dropdown-nav-links">
+            <a aria-current='page' href='/navbar/index.html'>Home</a>
+            <a aria-current='' href='profile.html'>Profile</a>
+            <a aria-current='' href='/aboutUs.html'>About Us</a>
+            <a aria-current='' href='/contactUs.html'>Contact Us</a>
+        </div>
     </nav>
 </body>
+<script src='./index.js'></script>
 </html>
